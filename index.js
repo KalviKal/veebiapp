@@ -17,13 +17,15 @@ app.get('/harjutus1', (req, res) => {
            
             <head>
                 <style>
-                    h1 {
+                    p {
                     color: red;
+                    text-align: center;
+                    
                     }
                 </style>
             </head>
             <body>
-                <h1><strong>${req.query.nimi}</strong> on maailma parim!</h1>
+                <p><strong>${req.query.nimi}</strong> on maailma parim!</p>
             </body>
         </html>
         `)
