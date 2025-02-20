@@ -23,7 +23,7 @@ app.get('/harjutus1', (req, res) => {
                 </style>
             </head>
             <body>
-                <h1>${req.query.nimi} on maailma parim!</h1>
+                <h1><strong>${req.query.nimi}</strong> on maailma parim!</h1>
             </body>
         </html>
         `)
