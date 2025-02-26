@@ -47,7 +47,53 @@ const matk1 = {
     matk.osalejad.push(osalejaEmail)
  }
 
+
+ const uudised = [
+   {
+       pealkiri: "Uus Mägimatk Otepääl",
+       uudisepiltUrl: "/assets/media/hiking1.png",
+       kokkuvote: "Lähme ja oleme kolm päeva mägedes",
+       infolink: "assets/test.html"
+   },
+   {
+      pealkiri: "Orienteerumine Pirital",
+      uudisepiltUrl: "/assets/media/hiking2.png",
+      kokkuvote: "Lähme ja oleme kolm päeva mägedes",
+      infolink: "assets/test.html"
+  },
+  {
+      pealkiri: "Rännak Paldiskis",
+      uudisepiltUrl: "/assets/media/hiking3.png",
+      kokkuvote: "Lähme ja oleme kolm päeva mägedes",
+      infolink: "assets/test.html"
+   },
+   {
+      pealkiri: "Rännak Aegviidus",
+      uudisepiltUrl: "/assets/media/hiking3.png",
+      kokkuvote: "Lähme ja oleme kolm päeva mägedes",
+      infolink: "assets/test.html"
+   },
+   {
+      pealkiri: "Matk ümber Nelijärve",
+      uudisepiltUrl: "/assets/media/hiking2.png",
+      kokkuvote: "Lähme ja oleme kolm päeva mägedes",
+      infolink: "assets/test.html"
+   },
+   {
+      pealkiri: "Matk Pranglil",
+      uudisepiltUrl: "/assets/media/hiking1.png",
+      kokkuvote: "Lähme ja oleme kolm päeva mägedes",
+      infolink: "assets/test.html"
+   }
+]
+
+function loeUudisedAndmed(){
+   return uudised
+}
+
+
  module.exports = {
     loeMatkadeAndmed,
-    lisaOsaleja
+    lisaOsaleja,
+    loeUudisedAndmed
  }

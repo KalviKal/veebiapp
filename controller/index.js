@@ -1,5 +1,5 @@
 
-const {loeMatkadeAndmed, lisaOsaleja} = require("../data")
+const {loeMatkadeAndmed, lisaOsaleja, loeUudisedAndmed} = require("../data")
 
 const naitaMatkad = (req, res) => {
     const matkad = loeMatkadeAndmed()
@@ -12,7 +12,14 @@ const registreeriOsaleja = (req, res) => {
     res.redirect("/matkad")
 }
 
+const naitaUudised = (req, res) => {
+    const uudised = loeUudisedAndmed()
+    console.log(uudised)
+    res.render("uudised", {uudised: uudised})
+}
+
 module.exports = {
     naitaMatkad,
-    registreeriOsaleja
+    registreeriOsaleja,
+    naitaUudised
 }

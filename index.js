@@ -4,7 +4,7 @@ const path = require("path")
 
 //Importing data
 
-const {naitaMatkad, registreeriOsaleja} = require("./controller")
+const {naitaMatkad, registreeriOsaleja, naitaUudised} = require("./controller")
 
 const app = express();
 app.use(express.json())
@@ -43,5 +43,6 @@ app.get('/harjutus1', (req, res) => {
 
 app.get('/matkad', naitaMatkad)
 app.get('/registreeru', registreeriOsaleja)
+app.get('/uudised', naitaUudised)
 
 app.listen(3200)
